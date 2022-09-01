@@ -20,6 +20,12 @@
   100% {
     transform: scale(1.3); } }
 
+@keyframes updown {
+  0% {
+    transform: translateY(-2rem); }
+  100% {
+    transform: translateY(0); } }
+
 .header {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
@@ -50,8 +56,8 @@
   .header__icon {
     height: 6rem;
     width: 6rem;
-    transform: scale(0.7);
-    animation: breathe 1s infinite forwards;
+    transform: scale(1);
+    animation: updown 1s infinite;
     cursor: pointer; }
     .header__icon-box {
       margin-top: 4rem; }
@@ -90,6 +96,16 @@
   .section-heading:hover::before {
     width: 99%; }
 
+.link__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4rem; }
+
+.link__item {
+  height: 5rem;
+  background-color: aqua; }
+
 .header {
   height: 96vh;
   width: 97vw; }
@@ -124,6 +140,12 @@
     transform: scale(0.7); }
   100% {
     transform: scale(1.3); } }
+
+@keyframes updown {
+  0% {
+    transform: translateY(-2rem); }
+  100% {
+    transform: translateY(0); } }
 
 *,
 *::after,

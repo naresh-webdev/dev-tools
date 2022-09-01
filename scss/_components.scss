@@ -39,11 +39,11 @@
   &__icon {
     height: 6rem;
     width: 6rem;
-    transform: scale(0.7);
+    transform: scale(1);
     &-box {
       margin-top: 4rem;
     }
-    animation: breathe 1s infinite forwards;
+    animation: updown 1s infinite;
     cursor: pointer;
   }
 }
@@ -91,5 +91,21 @@
   }
   &:hover::before {
     width: 99%;
+  }
+}
+
+// links section grid
+
+.link {
+  &__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 4rem;
+  }
+
+  &__item {
+    height: 5rem;
+    background-color: aqua;
   }
 }
