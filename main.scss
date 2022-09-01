@@ -1,0 +1,28 @@
+@import "scss/components";
+@import "scss/layout";
+@import "scss/utilities";
+@import "scss/variables";
+@import "scss/animations";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-family;
+  background-color: $color-grey-light-2;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}

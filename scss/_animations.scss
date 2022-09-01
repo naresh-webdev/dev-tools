@@ -1,0 +1,22 @@
+// header
+
+@keyframes to-right {
+  0% {
+    transform: translateX(-20rem);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(3rem);
+    opacity: 1;
+  }
+}
+@keyframes to-left {
+  0% {
+    transform: translateX(20rem);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(-3rem);
+    opacity: 1;
+  }
+}

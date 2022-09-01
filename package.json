@@ -1,0 +1,21 @@
+{
+  "name": "dev-tools",
+  "version": "1.0.0",
+  "description": "'website for popularly used dev-tools all organised in one page'",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel dev-server watch-sass",
+    "build-css": "npm-run-all prefix-css compress-css",
+    "dev-server": "live-server",
+    "watch-sass": "node-sass -w main.scss css/style.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.prefix.css",
+    "compress-css": "node-sass css/style.prefix.css css/style.compress.css --output-style compressed"
+  },
+  "author": "Naresh M",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "autoprefixer": "^10.4.8",
+    "postcss-cli": "^10.0.0"
+  }
+}
